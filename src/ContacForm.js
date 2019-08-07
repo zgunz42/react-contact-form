@@ -55,7 +55,7 @@ class ContactFrom extends React.Component {
 
     async startWhatsappAction(name, email, subject, message) {
         let templateMessage = `Hello I am ${name} (${email}), about ${subject}. ${message}`;
-        let url = `${this.props.phone}?text=${encodeURIComponent(templateMessage)}`;
+        let url = `https://wa.me/${this.props.phone}?text=${encodeURIComponent(templateMessage)}`;
 
         window.open(url, '_blank');
         await (new Promise(resolve => setTimeout(resolve, 200)));
