@@ -1,105 +1,124 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 14vmin;
-  pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
+    height: 14vmin;
+    pointer-events: none;
 }
 
 .App-body {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
 }
 
 .App-content {
-  background-color: white;
-  padding: 1rem 2rem 2rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 3px 2px #1c1d1f;
+    background-color: white;
+    padding: 1rem 2rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 2px #1c1d1f;
 }
 
 .App-field .App-input {
-  width: 100%;
-  border: 1px solid #bdbdbd;
-  padding: 8px;
-  margin-top: 4px;
-  border-radius: 5px;
-  max-width: 100%;
-  box-shadow: 0 1px 2px 1px #dddddd;
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 5px;
+    max-width: 100%;
+    box-shadow: 0 1px 2px 1px #dddddd;
 }
 
 textarea.App-input {
-  height: 80px;
-  resize: vertical;
+    height: 80px;
+    resize: vertical;
 }
 
 
 .App-field label {
-  margin-bottom: 4rem;
-  color: rgb(199, 199, 199);
+    margin-bottom: 4rem;
+    color: rgb(199, 199, 199);
 }
 
 .App-field {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .App-btn.btn-submit {
-  background-color: #282c34;
-  color: #fff;
-  border: none;
-  padding: 8px;
-  width: 100%;
-  border-radius: 5px;
-  margin: 2rem 0 0;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 1px 1px 1px rgba(43, 43, 65, 0.72);
+    background-color: #282c34;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 2rem 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 1px rgba(43, 43, 65, 0.72);
 }
 
 .App-field-group {
-  display: flex;
-  max-width: 100%;
-  flex-direction: column;
-  text-align: start;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    text-align: start;
 }
+
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 .contact-option {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
 }
 
 .contact-option .item-option {
-  text-decoration: none;
-  background-color: #61dafb;
-  color: white;
-  width: 50px;
-  justify-content: center;
-  display: flex;
-  height: 50px;
-  border-radius: 50%;
+    text-decoration: none;
+    background-color: #61dafb;
+    color: white;
+    width: 50px;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.contact-option .item-option.active, .contact-option .item-option:hover, .contact-option .item-option:focus {
+    background-color: #347084;
 }
 
 .contact-option .item-option > * {
-  margin: auto;
+    margin: auto;
+}
+
+.flash {
+    font-size: 12px;
+    font-style: italic;
+    color: #dddddd;
+}
+
+.flash.success {
+    color: #b6fb11;
+}
+
+.flash.error {
+    color: #ff721c;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
