@@ -116,7 +116,6 @@ class ContactFrom extends React.Component {
     }
 
     handleOptionChange(option) {
-        console.log(option);
         this.setState({
             active: option
         })
