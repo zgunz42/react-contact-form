@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
     let email = 'http://bungamata.com';
-    let phone = '6282342771457';
+    let phone = '6287705635438';
 
     return (
         <div className="App">
